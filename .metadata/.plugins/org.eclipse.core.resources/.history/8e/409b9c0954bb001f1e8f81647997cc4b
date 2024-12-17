@@ -1,0 +1,20 @@
+package mapTest;
+
+import java.util.HashMap;
+
+// 1번 : hashMap
+
+public class HashMapTest01 {
+	public static void main(String[] args) {
+		HashMap<Object, Object> map = new HashMap<>();
+		System.out.println(map);
+		System.out.println(map.toString());
+		
+//		map.put("Stringkey", "StringValue);
+		System.out.println(map);
+		map.put("Key1", map);
+		map.put(map, map);
+//		map.put(map, "Value2");
+		System.out.println(map);
+	}
+}

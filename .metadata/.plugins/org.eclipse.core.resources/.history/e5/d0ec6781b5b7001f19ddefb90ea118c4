@@ -1,0 +1,47 @@
+package ex05_길진수;
+
+public class Zoo {
+//	(3) Zoo 클래스
+//	필드
+//	    Animal[] animals : 동물 객체 배열
+//	    int animalCount : 현재 동물 수
+//	생성자
+//	    배열 크기를 매개변수로 받아 초기화
+
+//	메소드
+//	    void addAnimal : 동물을 배열에 추가, 매개변수는 참조변수의 다형성 이용할 것
+//	        배열 크기를 초과하면 "더 이상 동물을 추가할 수 없습니다"를 출력
+//	    void printAllAnimals() : 모든 동물의 이름과 행동을 출력
+
+	// 필드 선언 객체 배열
+	// 필드 동물의 수 저장
+	// 생성자 배열 크기를 받아 초기화
+	// 메소드 동물 각 인덱스에 넣기
+	// 메소드 행동 출력
+
+	Animal[] animals;
+	int animalCount;
+
+	public Zoo(int num) {
+		animals = new Animal[num];
+	}
+
+	void addAnimal(Animal a) {
+		if(animalCount == 3) {
+			System.out.println("더 이상 동물을 추가할 수 없습니다");
+			return;
+		}
+		if (animalCount <= animals.length) {
+			animals[animalCount] = a;
+			System.out.println(animals[animalCount].name);
+			animalCount++;
+		}
+	}
+
+	void printAllAction() {
+		for (Animal ani : animals) {
+			ani.performAction();
+		}
+	}
+
+}

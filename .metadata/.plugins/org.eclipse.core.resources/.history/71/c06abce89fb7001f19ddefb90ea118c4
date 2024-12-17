@@ -1,0 +1,6 @@
+package task;
+
+@FunctionalInterface
+public interface subInter {
+	String subInterMrthod(String msg1, String msg2);
+}

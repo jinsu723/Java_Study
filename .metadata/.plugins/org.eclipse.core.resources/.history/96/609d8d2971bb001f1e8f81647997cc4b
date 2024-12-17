@@ -1,0 +1,19 @@
+package teamTask01;
+
+public class Main {
+	public static void main(String[] args) {
+		UserService us = new UserService("id", "pw", "aa", "10");
+		UserService us1 = new UserService("id", "pw", "aa", "10");
+		UserService us2 = new UserService("i", "pw", "aa", "10");
+		
+		System.out.println(us);
+		System.out.println(us.getLi());
+		System.out.println(us1.getLi());
+		
+//		System.out.println(us.getAge());
+//		System.out.println(us.age);
+		
+		us.login("id", "pw");
+		us.login("iw", "pw");
+	}
+}

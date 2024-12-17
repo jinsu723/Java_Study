@@ -1,0 +1,55 @@
+package ex05_길진수;
+
+public class Main {
+	public static void main(String[] args) {
+//		5. 동물원 프로그램을 구현하라
+//		[요구사항]
+//		(1) 추상 클래스 Animal
+//		필드
+//		    String name : 동물 이름 (protected)
+//		생성자
+//		    이름을 매개변수로 받아 초기화
+//		메소드
+//		    String getName() : 동물의 이름을 반환
+//		    void performActions() : 추상 메소드, 동물의 행동을 출력
+//
+//		 
+//
+//		(2) Pet 클래스
+//		    Animal 추상 클래스를 상속받아 구현
+//		생성자
+//		    name을 매개변수로 받아 초기화
+//		메소드
+//		    void play() : 동물이 장난치는 행동을 출력
+//		    void eat() : 동물이 먹는 행동을 출력
+//		    void sleep() : 동물이 잠자는 행동을 출력
+//		    void performActions() : 위 세 메소드를 호출하여 행동을 출력
+//
+//		 
+//
+//		(3) Zoo 클래스
+//		필드
+//		    Animal[] animals : 동물 객체 배열
+//		    int animalCount : 현재 동물 수
+//		생성자
+//		    배열 크기를 매개변수로 받아 초기화
+//		메소드
+//		    void addAnimal : 동물을 배열에 추가, 매개변수는 참조변수의 다형성 이용할 것
+//		        배열 크기를 초과하면 "더 이상 동물을 추가할 수 없습니다"를 출력
+//		    void printAllAnimals() : 모든 동물의 이름과 행동을 출력
+//
+//
+//		(4) Main 클래스
+//		    Zoo 객체를 생성하여(3마리) printAllAnimals() 메소드를 호출하여 모든 동물의 행동을 출력
+		
+		Zoo z = new Zoo(3);
+		z.addAnimal(0, new Zoo("얼룩말"));
+		z.addAnimal(1, new Zoo("사자"));
+		z.addAnimal(2, new Zoo("기린"));
+		
+		for(Animal ar : z.animals) {
+			System.out.println(z);
+		}
+
+	}
+}

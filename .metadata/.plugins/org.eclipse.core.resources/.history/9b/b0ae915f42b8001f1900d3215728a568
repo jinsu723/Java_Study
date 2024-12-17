@@ -1,0 +1,5 @@
+package ex06_길진수;
+
+public interface AdvanceAccount extends Account{
+
+}

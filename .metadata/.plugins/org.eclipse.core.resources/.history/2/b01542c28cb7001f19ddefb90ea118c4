@@ -1,0 +1,16 @@
+package lambda;
+
+// 식과 문의 차이
+
+public class lambdaTest {
+	public static void main(String[] args) {
+		// 식(Expression), 문(Statement)
+		
+		// 문(Statement) : 조건문, 반복문, 제어문
+		// java에서 실행 가능ㅇ한 최소한의 코드 블록
+		// if문, switch문, for문, ..
+		// 하나 이상의식을 포함할 수가 있다
+		
+		// 식(Expression) : 조건식, 증감식, 초기식
+	}
+}

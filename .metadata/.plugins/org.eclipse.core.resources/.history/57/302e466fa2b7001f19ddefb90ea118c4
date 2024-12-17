@@ -1,0 +1,17 @@
+package task;
+
+public class Main2 {
+	public static void main(String[] args) {
+		
+		Sub
+		
+	}
+	
+	static SubInter subPoint(String word) {
+		if(word.equals("F")) {
+			return null;
+		} else if(word.equals("B")) {
+			return null;
+		} return null;
+	}
+}

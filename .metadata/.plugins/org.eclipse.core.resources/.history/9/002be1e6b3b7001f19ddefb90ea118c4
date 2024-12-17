@@ -1,0 +1,20 @@
+package ex05_길진수;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		// 객체를 선언하고 배열의 크기를 보내 초기화
+		// 각 객체 생성
+		// 행동 일괄 출력
+		
+		Zoo z = new Zoo(3);
+		z.addAnimal(new Pet("얼룩말"));
+		z.addAnimal(new Pet("사자"));
+		z.addAnimal(new Pet("기린"));
+		z.addAnimal(new Pet("고릴라"));
+		
+		z.printAllAction();
+		
+
+	}
+}

@@ -1,0 +1,10 @@
+package setTest;
+
+import java.util.HashSet;
+
+public class HashSetTest02 {
+	public static void main(String[] args) {
+		// HeshSet 객체 생성
+		HashSet<> set = new HashSet<>();
+	}
+}

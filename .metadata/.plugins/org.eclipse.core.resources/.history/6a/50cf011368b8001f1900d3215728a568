@@ -1,0 +1,21 @@
+package task01;
+
+import java.util.Scanner;
+
+public class Method {
+	int sumNum(int num) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int count = 0;
+		for(int i=0; i<=a; i++) {
+			count += i;
+		}
+		return count;
+	}
+	
+	int checkNum(String num) {
+		if(num.charAt(0) > 10) {
+			return 0;
+		}
+	}
+}

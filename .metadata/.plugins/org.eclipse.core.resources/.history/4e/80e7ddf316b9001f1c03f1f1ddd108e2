@@ -1,0 +1,10 @@
+package listTest;
+
+class MyClass<T>{
+	// 필드
+	T data;
+}
+
+public class ArrayListTest02 {
+
+}

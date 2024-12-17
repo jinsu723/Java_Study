@@ -1,0 +1,12 @@
+package task;
+
+public class Test {
+	public static void main(String[] args) {
+//		Integer num = new Integer(19);
+		Integer num = Integer.valueOf(10);
+		System.out.println(num);
+		
+		int num1 = num.intValue();
+		System.out.println(num1);
+	}
+}

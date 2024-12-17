@@ -1,0 +1,9 @@
+package mapTest;
+
+// 2번 : HashMap
+
+public class HashMapTest02 {
+	public static void main(String[] args) {
+		HashMap<String, Integer> map = new HashMap<>();
+	}
+}

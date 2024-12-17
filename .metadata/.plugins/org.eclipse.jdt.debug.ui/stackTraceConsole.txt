@@ -1,0 +1,4 @@
+avg = (num1 + num2 + num3) / 3d;
+			
+			System.out.println("최소값 : " + min + ", 최대값 : " + max);
+			System.out.printf("평균 : %.3f", avg);

@@ -1,0 +1,27 @@
+package task04;
+
+import task01.GetNum;
+
+public class Method extends GetNum{
+
+	@Override
+	public boolean checkNum(String num) {
+		// TODO Auto-generated method stub
+		return super.checkNum(num);
+	}
+	
+	// 3의 배수라면 Fizz 5의 배수라면 Buzz 공배수라면 FizzBuzz
+	String getWord(int num) {
+		if(num%3==0 && num%5==0) {
+			return "FizzBuzz";
+		} else if(num%3 == 0) {
+			return "Fizz";
+		} else if(num%5 == 0) {
+			return "Buzz";
+		} else {
+			return num + "";
+		}
+			
+	}
+
+}

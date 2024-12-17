@@ -1,0 +1,31 @@
+package listTest;
+
+class Person{
+	// 필드
+	String name;
+	int age;
+	
+	// 생성자
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+	// toString 오버라이딩
+	@Override
+	public String toString() {
+		return "Person [name : " + this.name + ", age : " + this.age + "]";
+	}
+	
+}
+
+class AgeComparator implements Comparator<Person>{
+	
+}
+
+public class ComparatorTest {
+	public static void main(String[] args) {
+		
+	}
+}

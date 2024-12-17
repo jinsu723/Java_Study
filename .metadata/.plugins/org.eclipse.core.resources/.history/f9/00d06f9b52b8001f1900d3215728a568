@@ -1,0 +1,15 @@
+package apiTest;
+
+public class ApiMain {
+	public static void main(String[] args) {
+		Calc calc = new Calc();
+		System.out.println(calc);
+		
+		try {
+			System.out.println(calc.divide(10, 0));
+		} catch (ArithmeticException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

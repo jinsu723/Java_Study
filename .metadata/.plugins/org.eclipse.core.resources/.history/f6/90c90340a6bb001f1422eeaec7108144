@@ -1,0 +1,61 @@
+package teamTask01;
+
+public class UserVO {
+	private int number;
+	private String id;
+	private String pw;
+	private String name;
+	private int age;
+	
+	public UserVO(int number, String id, String pw, String name, int age) {
+		super();
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "번호 : " + this.number + " 아이디 : " + this.id
+				+ " 이름 : " + this.name + " 나이 : " + this.age;
+	}
+
+	@Override
+	public int hashCode() {
+		return Integer.hashCode(this.number);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		System.out.println("equals 메소드 호출");
+		if(this == obj) {
+			return true;
+		} else if(!(obj instanceof UserVO)) {
+			return false;
+		}
+		return number == ((UserVO)obj).number;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public String getPw() {
+		return pw;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+	
+	
+}

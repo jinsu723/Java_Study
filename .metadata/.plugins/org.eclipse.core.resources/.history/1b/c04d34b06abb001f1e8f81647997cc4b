@@ -1,0 +1,55 @@
+package teamTask01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserService extends UserVO{
+
+//	- UserService
+//	회원 정보를 저장할 List를 private으로 선언한다
+//	아이디 중복검사 메소드
+//	회원가입 메소드
+//	로그인 메소드 => 스트림 api 사용
+	
+
+	// 로직
+	// List<String> 필드 선언
+	private List<String> li = new ArrayList<>();
+	
+	public UserService(String id, String pw, String name, String age) {
+		super(id, pw, name, age);
+		this.li.add(getId());
+		this.li.add(getPw());
+		this.li.add(getName());
+		this.li.add(getAge());
+	}
+	
+	public List<String> getLi(){
+		return li;
+	}
+
+	
+	// 아이디 중복 검사 메소드
+	// boolean 매개변수 1개
+	// 아이디 비교
+	@Override
+	boolean checkID(String id) {
+		if(li.contains(id)) {
+			return false;
+		}
+		return true;
+	}
+	
+	// 회원가입 메소드
+	void singIn(String id, String pw, String name, String age) {
+		if(checkID(id)) {
+			UserService(id, pw, name, age);
+			System.out.println("회원가입 성공");
+		} else {
+			System.out.println("이미 사용중인 아이디입니다");
+		}
+	}
+	
+	
+	// 로그인 메소드
+}

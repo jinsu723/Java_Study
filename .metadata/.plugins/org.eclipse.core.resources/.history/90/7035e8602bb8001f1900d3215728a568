@@ -1,0 +1,26 @@
+package exceptionTest;
+
+// 3번 : Exception Basic 예외처리
+
+public class ExceptionTest03 {
+	public static void main(String[] args) {
+		ExceptionTest02 et = new ExceptionTest02();
+		System.out.println("프로그램 시작");
+		et.printLength("java");
+		et.printLength(null);
+		System.out.println("프로그램 종료");
+	}
+	
+	public void printLength(String data) {
+		try {
+			int result = data.length();
+			// data의 값이 null이 들어오면 NullPointException 발생
+			System.out.println("글자 수 : " + result);
+		}catch(NullPointerException e) {
+//			System.out.println("null 값은 입력 불가능합니다");
+			// 예외 정보를 얻는 방법 3가지
+			// 1.
+			System.out.println(e);
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package task;
+
+// 6번 :
+
+public class ArrayTask01 {
+	public static void main(String[] args) {
+		
+	}
+}

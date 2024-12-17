@@ -1,0 +1,34 @@
+package task;
+
+// 5번 :
+
+public class ForTask01 {
+	public static void main(String[] args) {
+		// 1. 1 ~ 100까지 출력 tab키만큼 띄우고 10마다 줄바꿈
+		// 1	2	3	4	5	6	7	8	9	10
+		// 11	12	13	14	15	16	17	18	19	20
+		// ...
+		// 91	92	...							100
+		
+		// 이중 for문
+		// 첫 번째 for문은 줄바꿈만 해준다
+		// 두 번째 for문에서 숫자들을 차례대로 출력한다
+		
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0; j < 10; j++) {
+				System.out.print((j+1) + "\t");
+			}
+			System.out.println();
+		}
+		
+		// 2. A ~ F 출력
+		int a = 'A';
+		System.out.println(a);
+		
+		// 3. aBcDeFgHiJkLmNoPqRsTuVwXyZ 출력
+		int i = 0;
+		
+		// 4. 1부터 100까지 숫자 중 3의 배수 또는 5의 배수만 출력 한 줄게 5개씩 띄어쓰기로 구분되도록 출력
+		//    최종적으로 5의 배수 또는 5의 배수 숫자들의 합을 구하기
+	}
+}

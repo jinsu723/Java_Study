@@ -1,0 +1,9 @@
+package task04;
+
+public class MainException extends Exception{
+
+	public MainException(String a) {
+		super(a);
+	}
+
+}

@@ -1,0 +1,10 @@
+package listTest;
+
+import java.util.ArrayList;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		//  ArrayList 객체 생성
+		ArrayList al = new ArrayList();
+	}
+}

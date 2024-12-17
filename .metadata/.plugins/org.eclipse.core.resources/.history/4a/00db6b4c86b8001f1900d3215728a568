@@ -1,0 +1,22 @@
+package task2;
+
+import method.GetNum;
+
+public class TaskMethod extends GetNum{
+
+	@Override
+	public boolean checkNum(String num) {
+		// TODO Auto-generated method stub
+		return super.checkNum(num);
+	}
+	
+	// 입력받은 단까지 구구단을 출력
+	void gugudan(int dan) {
+		for(int i=1; i<=9; i++) {
+			for(int j=1; j<=dan; j++) {
+				System.out.printf("%d\tX\t%d\t= %d\t", j, i, (j*i));
+			}
+			System.out.println();
+		}
+	}
+}

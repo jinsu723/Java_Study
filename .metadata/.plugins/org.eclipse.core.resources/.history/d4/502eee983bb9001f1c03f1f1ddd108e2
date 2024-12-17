@@ -1,0 +1,39 @@
+package task;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
+public class LottoList {
+	public static void main(String[] args) {
+		
+		// Integer 타입의 객체 생성
+		// 랜한 수를 넣어줄 Random 클래스 객체 선언
+		// 반복문을 사용해서 배열의 크기가 6이 될 때까지 반복
+		// 반복문 안에서 중복검사 실행
+		// 랜덤한 값을 임시로 저장해둘 변수 선언
+		// for문을 사용하여 배열의 길이만큼 반복
+		// 만약 배열에 랜덤한 값이 없다면 랜덤한 값 저장
+		// 이미 같은 값이 있다면 대입하지 않고 건너뛰기
+		
+		ArrayList<Integer> al = new ArrayList<>();
+		Random rd = new Random();
+		int randomNum = 0;
+		
+		while(al.size() < 6) {
+//			System.out.println(al.size());
+			randomNum = rd.nextInt(1, 45);
+			for(int i=0; i<=al.size(); i++) {
+				if(al.contains(randomNum)) {
+					continue;
+				} else {
+					al.add(randomNum);
+//					System.out.println(al);
+				}
+			}
+		}
+		
+		Collections.sort(al);
+		System.out.println(al);
+	}
+}

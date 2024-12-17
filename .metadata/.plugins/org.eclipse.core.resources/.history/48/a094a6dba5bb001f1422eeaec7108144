@@ -1,0 +1,7 @@
+package teamTask01;
+
+public class Main {
+	public static void main(String[] args) {
+		UserService user1 = new UserService();
+	}
+}

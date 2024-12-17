@@ -1,0 +1,6 @@
+package lambda2;
+
+@FunctionalInterface
+public interface FunctionalInter4 {
+	String combineString(String msg1, String msg2);
+}

@@ -1,0 +1,21 @@
+package objextTest;
+
+public class User {
+
+	// 필드
+	int userName;
+	String nserName;
+	
+	// 기본 생성자
+	public User() {
+		super();
+	}
+	
+	// 생성자 오버로딩
+	public User(int userName, String nserName) {
+		super();
+		this.userName = userName;
+		this.nserName = nserName;
+	}
+	
+}

@@ -1,0 +1,13 @@
+package teamTask01;
+
+public class Main {
+	public static void main(String[] args) {
+		UserService user1 = new UserService("1", "web", "1234", "jinsu", "27");
+		UserService user2 = new UserService("2", "boan", "12345", "dog", "4");
+		UserService user3 = new UserService("3", "짱구", "pw", "aa", "10");
+		
+		user1.login("id", "pw");
+		user2.login("i", "w");
+		user3.login("i", "w");
+	}
+}

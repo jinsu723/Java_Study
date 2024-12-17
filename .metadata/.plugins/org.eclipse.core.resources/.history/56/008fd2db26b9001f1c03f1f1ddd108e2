@@ -1,0 +1,22 @@
+package setTest;
+
+public class Student {
+	// 필드
+	int number;
+	String name;
+	
+	// Student 클래스의 생성자
+	public Student(int number, String name) {
+		super();
+		this.number = number;
+		this.name = name;
+	}
+
+	// toString 재정의
+	@Override
+	public String toString() {
+		return "Student [number : " + this.number + ", name : " + this.name + "]";
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+package mapTest;
+
+import java.util.HashMap;
+
+// 1번 : hashMap
+
+public class HashMapTest01 {
+	public static void main(String[] args) {
+		HashMap<String, Integer> map = new HashMap<>();
+		System.out.println(map);
+		System.out.println(map.toString());
+		
+		HashMap<HashMap, HashMap> ma1 = new HashMap<>();
+		
+		map.put("A", 1);
+		ma1.put(map, map);
+		System.out.println(ma1);
+	}
+}

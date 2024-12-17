@@ -1,0 +1,11 @@
+package lambda;
+
+// 람다식
+
+public class lambdaTest2 {
+	void printHello() {
+		System.out.println("안녕하세요");
+	}
+	
+	// 
+}

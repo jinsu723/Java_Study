@@ -1,0 +1,25 @@
+package mapTest;
+
+import java.util.HashMap;
+
+// 2번 : HashMap
+
+public class HashMapTest02 {
+	public static void main(String[] args) {
+		HashMap<String, Integer> map = new HashMap<>();
+		
+		System.out.println(map);
+		map.put("a", 1);
+		map.put("b", 2);
+		map.put("c", 3);
+		map.put("d", 4);
+		System.out.println(map);
+		
+		map.put("e", 1);  // key는 중복 불가능, value는 중복 가능
+		System.out.println(map);
+		System.out.println(map.get("d"));
+		
+		System.out.println(map.size());
+		System.out.println(map.keySet());
+	}
+}

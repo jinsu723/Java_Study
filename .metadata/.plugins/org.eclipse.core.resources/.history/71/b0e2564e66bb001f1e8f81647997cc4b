@@ -1,0 +1,8 @@
+package teamTask01;
+
+public abstract class UserVO {
+	private String ID;
+	private String PW;
+	private String Name;
+	private String age;
+}

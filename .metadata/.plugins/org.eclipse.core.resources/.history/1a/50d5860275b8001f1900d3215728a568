@@ -1,0 +1,7 @@
+package task04;
+
+import task01.GetNum;
+
+public class Method extends GetNum{
+
+}

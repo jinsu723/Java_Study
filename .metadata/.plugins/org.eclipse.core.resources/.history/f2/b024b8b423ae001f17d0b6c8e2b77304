@@ -1,0 +1,9 @@
+package task;
+
+// 5번 :
+
+public class ForTask01 {
+	public static void main(String[] args) {
+		
+	}
+}

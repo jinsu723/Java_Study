@@ -1,0 +1,5 @@
+package task;
+
+public interface MultipleInter {
+	int getInt(int num1, int num2);
+}

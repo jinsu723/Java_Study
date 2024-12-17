@@ -1,0 +1,17 @@
+package task;
+
+public class Main {
+	public static void main(String[] args) {
+		MultipleInter mi1 = (num1, num2) -> num1 * num2;
+		MultipleInter mi2 = (num1, num2) -> 0;
+		
+	}
+	
+	static MultipleInter calculator(boolean isTrue) {
+		if(isTrue) {
+			return MultipleInter mi1 = (num1, num2) -> num1 * num2;
+		} else {
+			return MultipleInter mi2 = (num1, num2) -> 0;
+		}
+	}
+}

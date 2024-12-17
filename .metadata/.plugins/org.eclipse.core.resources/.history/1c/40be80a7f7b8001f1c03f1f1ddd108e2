@@ -1,0 +1,32 @@
+package objextTest;
+
+// 3번 : Object 클래스 - equals()
+
+public class Person {
+	// 필드
+	String name;
+	int age;
+	
+	// 매개변수 있는 생성자
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+	// equals 오버라이딩
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
+
+	// toString 오버라이딩
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Person [name : " + name + ", age : " + age + "]";
+	}
+	
+	
+	
+}

@@ -1,0 +1,16 @@
+package exceptionTest;
+
+// 2번 :
+
+public class ExceptionTest02 {
+	public static void main(String[] args) {
+		ExceptionTest02 et = new ExceptionTest02();
+		
+		et.printLength("java");
+	}
+	
+	public void printLength(String data) {
+		int result = data.length();
+		System.out.println("글지 수 : " + result);
+	}
+}

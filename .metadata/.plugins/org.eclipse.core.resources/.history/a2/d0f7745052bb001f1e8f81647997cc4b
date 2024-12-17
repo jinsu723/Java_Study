@@ -1,0 +1,11 @@
+package mapTest;
+
+import java.util.HashMap;
+
+// 1번 : hashMap
+
+public class HashMapTest01 {
+	public static void main(String[] args) {
+		HashMap map = new HashMap();
+	}
+}

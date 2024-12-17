@@ -1,0 +1,25 @@
+package task;
+
+public class Main2 {
+	public static void main(String[] args) {
+		
+		System.out.println("F를 입력 : " + subPoint("F").getMsg("ABCDEFG", "가나다"));
+		System.out.println("B를 입력 : " + subPoint("B").getMsg("ABCDEFG", "가나다"));
+		
+		SubInter si = new SubInter(String msg1, String msg2) {
+
+			@Override
+			public String getMsg(String msg1, String msg2) {
+				
+				return null;
+			}
+			
+		};
+		
+	}
+	
+	static SubInter subPoint(String word) {
+		String result;
+		return null;
+	}
+}

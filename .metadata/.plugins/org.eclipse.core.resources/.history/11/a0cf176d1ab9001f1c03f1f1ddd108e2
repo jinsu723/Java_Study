@@ -1,0 +1,21 @@
+package listTest;
+
+import java.util.ArrayList;
+
+public class ArrayListTest03 {
+	public static void main(String[] args) {
+//		List<Integer> l = new ArrayList<>();  // 업캐스팅
+		ArrayList<Integer> li = new ArrayList<>();
+		
+		// 추가
+		li.add(10);
+		li.add(20);
+		li.add(30);
+		li.add(40);
+		li.add(50);
+		System.out.println(li);
+		
+		// 값 가져오기 : index 번호로 특정 값 가져오기
+		System.out.println(li.get(0));
+	}
+}

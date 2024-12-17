@@ -1,0 +1,33 @@
+package task04;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+//		4. 사용자로부터 숫자를 입력받아, 입력받은 숫자가 3의 배수인 경우 "Fizz", 
+//		5의 배수인 경우 "Buzz", 3과 5의 공배수인 경우 "FizzBuzz", 
+//		그 외의 경우에는 입력받은 숫자를 출력하는 프로그램을 작성하세요. 
+//		사용자가 문자열을 입력할 경우, "숫자가 아닌 문자열이 입력되었습니다"라는 예외 메시지를 출력하세요.
+		
+		Method m = new Method();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("*****Fizz&Buzz*****");
+		System.out.println("정수를 입력하세요");
+		
+		String msg = sc.nextLine();
+		
+		if(!m.checkNum(msg)) {
+			try {
+				throw new MainException("숫자가 아닌 문자열이 입력되었습니다");
+			} catch (MainException e) {
+				// TODO Auto-generated catch block
+				System.out.println(e.getMessage());
+			}
+		} else {
+			System.out.println("결과 공개 : " + m.getWord(Integer.parseInt(msg)));
+		}
+		
+		sc.close();
+	}
+}

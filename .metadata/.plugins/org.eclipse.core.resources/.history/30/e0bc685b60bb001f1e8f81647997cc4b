@@ -1,0 +1,6 @@
+package teamTask01;
+
+public class Test {
+
+	private ArrayList<Integer> aer = new ArrayList<>();
+}

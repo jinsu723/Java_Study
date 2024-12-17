@@ -1,0 +1,9 @@
+package listTest;
+
+import java.util.ArrayList;
+
+public class ArraysTest {
+	public static void main(String[] args) {
+		ArrayList<Integer> li = new ArrayList<>();
+	}
+}

@@ -1,0 +1,24 @@
+package setTest;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetTest {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<>();
+		
+		System.out.println(set.toString());
+		
+		// 요소 추가 add
+		set.add("고양이");
+		set.add("강아지");
+		set.add("치타");
+		set.add("호랑이");
+		set.add("코알라");
+		set.add("코알라");
+		System.out.println(set);
+		
+		// 요소 포함 contains
+		System.out.println(set.contains("고"));
+	}
+}

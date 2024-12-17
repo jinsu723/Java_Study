@@ -1,0 +1,9 @@
+package task2;
+
+public class TaskMethod {
+	
+	// 입력한 숫자까지 구구단을 출력하는 메소드
+	void gugudan() {
+		Scanner sc = new Scnner(System.in);
+	}
+}

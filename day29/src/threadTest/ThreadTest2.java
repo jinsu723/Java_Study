@@ -16,8 +16,24 @@ public class ThreadTest2 {
 		
 		// Runnable 인터페이스는 함수형 인터페이스이다
 		// 람다식을 활용할 수 있다
-		Runnable r1 = () -> {
-			for(int i=0; i<10; i++){
+//		Runnable r1 = () -> {
+//			for(int i=0; i<10; i++){
+//				System.out.println(Thread.currentThread().getName());
+//				try {
+//					Thread.sleep(500);
+//				} catch (InterruptedException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//			}
+//		};
+		
+		// r1 하나 넘겨주고 C이름 붙이고 start 시키기
+//		Thread test = new Thread(r1, "C");
+//		test.start();
+		
+		Thread t3 = new Thread(() -> {
+			for(int i=0; i<10; i++) {
 				System.out.println(Thread.currentThread().getName());
 				try {
 					Thread.sleep(500);
@@ -26,8 +42,8 @@ public class ThreadTest2 {
 					e.printStackTrace();
 				}
 			}
-		};
-		
-		r1.run();
+			System.out.println(Thread.currentThread().getName() + "쓰레드 종료!");
+		}, "C");
+		t3.start();
 	}
 }

@@ -1,9 +1,0 @@
-package task01;
-
-import java.util.Scanner;
-
-public class Method {
-	void sumNum(int num) {
-		Scanner sc = new Scanner(System.in);
-	}
-}

@@ -1,8 +1,0 @@
-package teamTask01;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class UserService {
-	private List<UserVO> uvo = new ArrayList<>();
-}

@@ -1,5 +1,0 @@
-package lambda2;
-
-public interface FunctionalInter4 {
-	String combineString(String mag1, String msg2);
-}

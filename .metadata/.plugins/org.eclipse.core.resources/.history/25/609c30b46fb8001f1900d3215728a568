@@ -1,9 +1,0 @@
-package task02;
-
-public class MainException extends NumberFormatException{
-
-	public MainException() {
-		System.out.println("숫자가 아닌 문자열이 입력되었습니다");
-	}
-
-}

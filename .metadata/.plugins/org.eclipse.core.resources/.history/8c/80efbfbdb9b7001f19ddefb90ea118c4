@@ -1,6 +1,0 @@
-package lambda2;
-
-@FunctionalInterface
-public interface FunctionalInter3 {
-	int getMul(int num1, int num2);
-}

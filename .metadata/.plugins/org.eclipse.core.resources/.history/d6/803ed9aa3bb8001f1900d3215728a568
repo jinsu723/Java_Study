@@ -1,9 +1,0 @@
-package exceptionTask;
-
-public class AccountException extends Exception{
-//    사용자 예외 정의 클래스
-//    AccountException extends Exception
-	public AccountException(int balnace, int num) {
-		super("현재 잔고는 원 입니다 출금 불가");
-	}
-}

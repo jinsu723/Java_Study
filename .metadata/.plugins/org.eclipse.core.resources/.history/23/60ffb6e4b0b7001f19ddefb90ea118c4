@@ -1,7 +1,0 @@
-package ex02_길진수;
-
-public class Print {
-	void print(int sum) {
-		System.out.println("15부터 30까지 짝수들의 합 : " + sum);
-	}
-}

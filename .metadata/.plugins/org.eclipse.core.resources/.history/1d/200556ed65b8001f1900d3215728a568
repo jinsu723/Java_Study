@@ -1,9 +1,0 @@
-package task01;
-
-public class Exception extends MainException{
-
-	public Exception() {
-		super();
-	}
-	
-}

@@ -1,5 +1,0 @@
-package task04;
-
-public class MainException extends Exception{
-
-}

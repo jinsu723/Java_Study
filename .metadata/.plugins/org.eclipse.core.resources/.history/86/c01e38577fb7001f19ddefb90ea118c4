@@ -1,5 +1,0 @@
-package anonymousTest;
-
-public class ClassA implements InterA{
-
-}

@@ -1,9 +1,0 @@
-package task02;
-
-public class MainException extends NumberFormatException{
-
-	public MainException(String msg) {
-		super(msg);
-	}
-
-}

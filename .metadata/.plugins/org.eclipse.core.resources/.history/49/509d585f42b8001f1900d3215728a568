@@ -1,5 +1,0 @@
-package ex06_길진수;
-
-public class SavingAccount implements AdvanceAccount{
-
-}

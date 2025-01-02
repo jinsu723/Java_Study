@@ -1,7 +1,0 @@
-package task02;
-
-import task01.GetNum;
-
-public class Method extends GetNum{
-	
-}

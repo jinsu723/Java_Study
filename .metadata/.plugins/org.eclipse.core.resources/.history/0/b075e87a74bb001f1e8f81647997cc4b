@@ -1,8 +1,0 @@
-package teamTask01;
-
-import java.util.ArrayList;
-
-public class Test {
-
-	private ArrayList<Integer> aer = new ArrayList<>();
-}

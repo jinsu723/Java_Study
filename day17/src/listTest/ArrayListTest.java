@@ -6,8 +6,8 @@ public class ArrayListTest {
 	public static void main(String[] args) {
 		//  ArrayList 객체 생성
 		ArrayList al = new ArrayList();
-		System.out.println(al);
-		System.out.println(al.toString());
+		System.out.println("1: " + al);
+		System.out.println("2 : " + al.toString());
 		
 		// 요소 추가 메소드
 		al.add(al);  // 객체 자기 자신을 넣으면 (this Collection)이 나온다
@@ -19,6 +19,7 @@ public class ArrayListTest {
 		System.out.println(al);
 		
 		// ArrayList 크기를 반복하면서 요소 출력
+		System.out.print("5 : ");
 		for(int i=0; i<al.size(); i++) {
 			System.out.println(i + " : " + al.get(i));
 		}

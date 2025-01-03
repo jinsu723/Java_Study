@@ -1,4 +1,4 @@
-package objextTest;
+package objectTest;
 
 // 3번 : Object 클래스 - equals()
 

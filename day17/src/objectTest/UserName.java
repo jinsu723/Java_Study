@@ -1,4 +1,4 @@
-package objextTest;
+package objectTest;
 
 public class UserName {
 	public static void main(String[] args) {
